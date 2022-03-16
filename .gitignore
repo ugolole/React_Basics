@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# This folder belongs to jetbrains and should not be included in version control.
+.idea
