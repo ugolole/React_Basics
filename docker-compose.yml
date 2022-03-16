@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  web-app:
+    container_name: "react-basics"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - "3001:3000"
+    networks:
+      default:
+        ipv4_address:  172.18.0.9
+    restart: always
+
+networks:
+  default:
+    external:
+      name: docker-network
