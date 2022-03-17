@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Counter from './components/counter';
+
+for(var i =0; i<3; i++){
+  console.log("This happened ", i);
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
+    <Counter/>
   </React.StrictMode>,
   document.getElementById('root')
 );
