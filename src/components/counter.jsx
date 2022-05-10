@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 
 // Create a counter class that extends the component class
 // The component class contains a set of methods that are needed by the Counter class.
@@ -17,7 +16,7 @@ class Counter extends Component {
   imageStyle = {
     borderRadius: 30,
   };
-
+  
   render() {
     return (
       <div>
