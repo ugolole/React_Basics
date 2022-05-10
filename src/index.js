@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Counter from "./components/counter";
+import CoppoLogs from "./components/coppoLogs";
 
 for (var i = 0; i < 3; i++) {
   console.log("This happened ", i);
@@ -11,7 +12,7 @@ for (var i = 0; i < 3; i++) {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Counter />
+    <Counter /> <CoppoLogs/>
   </React.StrictMode>,
   document.getElementById("root")
 );
@@ -20,3 +21,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+    
